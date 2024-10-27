@@ -9,20 +9,29 @@ React ou Vue.js para uma interface mais dinâmica.
 Bootstrap ou TailwindCSS para um design responsivo.
 Funcionalidades do Front-End:
 
-Página Inicial
+*Página Inicial - Index.html*
 
 Explicação do Portal: introdução sobre a importância de soft skills e como o portal funciona.
 Destaques: exibir práticas recomendadas ou mais populares.
-Listagem de Habilidades
 
+*Página habilidades - habilidades.html*
+
+Listagem de Habilidades
 Categorias de Soft Skills (ex.: Comunicação, Trabalho em Equipe, Resiliência).
 Filtros para habilidades por nível de dificuldade ou tempo estimado para conclusão.
-Página de Prática
+
+*Página de Prática - pratica.html*
 
 Descrição da Habilidade e dos passos de prática.
 Campo de Reflexão para que o usuário anote insights e aprendizados após a prática.
 Botão de Conclusão para registrar a prática como concluída.
-Perfil do Usuário
+
+*Página de Login/Cadastro - login.html | Responsavel: Gabriel*
+
+Login/Cadastro sera feito em um modal que constara em todas as paginas.
+
+
+*Página de Perfil - perfil.html | Responsavel: Gabriel*
 
 Histórico de Práticas e Progresso: gráficos ou barras de progresso com soft skills já praticadas.
 Badge de Conquista: premiação ao completar práticas de diferentes habilidades.
