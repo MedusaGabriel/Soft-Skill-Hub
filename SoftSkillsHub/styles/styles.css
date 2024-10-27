@@ -1,85 +1,264 @@
-/* Reset básico para margens e paddings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --primary-color: #e91e63; /* Rosa escuro */
+    --secondary-color: #fce4ec; /* Rosa claro */
+    --background-color: #f8f8f8; /* Fundo leve */
+    --text-color: #333; /* Cor do texto */
+    --card-bg-color: white; /* Fundo dos cartões */
+    --card-shadow: rgba(0, 0, 0, 0.2); /* Sombra dos cartões */
 }
 
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
-/* Estilo do cabeçalho */
 header {
-    background: #007BFF; /* Azul */
-    color: #fff;
+    background-color: var(--primary-color);
+    color: white;
     padding: 20px 0;
 }
 
 .container {
     width: 90%;
-    margin: auto;
-    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-h1 {
+h1, h2, h3 {
     margin: 0;
-}
-
-nav {
-    float: right;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os links de navegação */
 }
 
-nav ul li {
-    display: inline;
-    margin-left: 20px;
+nav li {
+    margin: 0 15px; /* Espaçamento entre os itens do menu */
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-nav ul li a:hover {
-    background: #0056b3; /* Azul escuro */
-}
-
-/* Estilo do rodapé */
-footer {
-    background: #333; /* Cinza escuro */
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
-}
-
-.footer-content {
-    width: 90%;
-    margin: auto;
-}
-
-.socials {
-    margin-top: 10px;
-}
-
-.socials a {
-    color: #fff;
-    margin: 0 10px;
+nav a {
+    color: white;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.socials a:hover {
-    color: #007BFF; /* Azul */
+nav a:hover {
+    color: #ffe082; /* Cor ao passar o mouse */
 }
+
+.intro {
+    padding: 40px 20px; /* Mais espaço no topo e na base */
+    text-align: center; /* Centraliza o texto */
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--card-shadow);
+}
+
+.intro h2 {
+    font-size: 2.5em; /* Tamanho maior para o título */
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.intro p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.highlights {
+    padding: 20px;
+}
+
+.highlights h3 {
+    text-align: center; /* Centraliza o título */
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.highlight-cards {
+    display: flex;
+    justify-content: center; /* Centraliza os cartões */
+    gap: 20px; /* Espaçamento entre os cartões */
+}
+
+.card {
+    background: var(--card-bg-color);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px var(--card-shadow);
+    text-align: center; /* Centraliza o texto dentro dos cartões */
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1; /* Faz os cartões ocuparem o mesmo espaço */
+    max-width: 300px; /* Largura máxima dos cartões */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px var(--card-shadow);
+}
+
+.testimonials {
+    padding: 20px;
+}
+
+.testimonials h3 {
+    text-align: center; /* Centraliza o título */
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center; /* Centraliza os depoimentos */
+    gap: 20px; /* Espaçamento entre os depoimentos */
+}
+
+.testimonial {
+    background: var(--card-bg-color);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px var(--card-shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px; /* Largura máxima dos depoimentos */
+    text-align: center; /* Centraliza o texto dentro dos depoimentos */
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px var(--card-shadow);
+}
+
+.call-to-action {
+    text-align: center;
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.call-to-action h3 {
+    color: var(--primary-color);
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d81b60; /* Escurecer ao passar o mouse */
+}
+
+.resources {
+    padding: 20
+}
+
+/* Habilidade -----------------------------------------------------------------------*/
+.skills-overview, .filters, .skills-list {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.filters label {
+    font-weight: bold;
+}
+
+.skills-list ul {
+    list-style: none;
+}
+
+.skills-list li {
+    background: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.skills-list li:hover {
+    transform: translateY(-5px);
+}
+
+.learn-more {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.learn-more:hover {
+    color: #ff99c2;
+}
+
+/* Habilidade -----------------------------------------------------------------------*/
+
+/*Práticas -----------------------------------------------------------------------*/
+.practice-overview, .reflection, .conclusion {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.practice-overview h2 {
+    color: var(--primary-color);
+}
+
+.practice-overview h3,
+.reflection h3 {
+    margin-top: 20px;
+    color: var(--primary-color);
+}
+
+.practice-overview ol {
+    margin: 10px 0 20px 20px;
+}
+
+#reflection-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.conclusion {
+    text-align: center;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff4d85; /* Cor mais clara para o hover */
+}
+/*Práticas -----------------------------------------------------------------------*/

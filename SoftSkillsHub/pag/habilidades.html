@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soft Skills Hub</title>
+    <title>Soft Skills Hub - Habilidades</title>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
@@ -23,9 +23,65 @@
     </header>
 
     <main>
-        <h2>Bem-vindo ao Soft Skills Hub</h2>
-        <p>NIVEL QUE O USUARIO JÁ CHEGOU</p>
+        <section class="skills-overview">
+            <h2>Listagem de Habilidades</h2>
+            <p>Aqui você pode explorar e filtrar as habilidades disponíveis.</p>
+        </section>
 
+        <section class="filters">
+            <h3>Filtros</h3>
+            <label for="category">Categoria:</label>
+            <select id="category">
+                <option value="all">Todas</option>
+                <option value="communication">Comunicação</option>
+                <option value="teamwork">Trabalho em Equipe</option>
+                <option value="resilience">Resiliência</option>
+                <option value="leadership">Liderança</option>
+            </select>
+
+            <label for="difficulty">Nível de Dificuldade:</label>
+            <select id="difficulty">
+                <option value="all">Todos</option>
+                <option value="easy">Fácil</option>
+                <option value="medium">Médio</option>
+                <option value="hard">Difícil</option>
+            </select>
+
+            <label for="time">Tempo Estimado:</label>
+            <select id="time">
+                <option value="all">Todos</option>
+                <option value="short">Curto (1-2 horas)</option>
+                <option value="medium">Médio (3-5 horas)</option>
+                <option value="long">Longo (mais de 5 horas)</option>
+            </select>
+        </section>
+
+        <section class="skills-list">
+            <h3>Habilidades Disponíveis</h3>
+            <ul>
+                <li>
+                    <h4>Comunicação Efetiva</h4>
+                    <p>Nível: Médio | Tempo Estimado: 2 horas</p>
+                    <a href="#" class="learn-more">Saiba Mais</a>
+                </li>
+                <li>
+                    <h4>Trabalho em Equipe</h4>
+                    <p>Nível: Fácil | Tempo Estimado: 1 hora</p>
+                    <a href="#" class="learn-more">Saiba Mais</a>
+                </li>
+                <li>
+                    <h4>Resiliência</h4>
+                    <p>Nível: Difícil | Tempo Estimado: 5 horas</p>
+                    <a href="#" class="learn-more">Saiba Mais</a>
+                </li>
+                <li>
+                    <h4>Liderança</h4>
+                    <p>Nível: Médio | Tempo Estimado: 3 horas</p>
+                    <a href="#" class="learn-more">Saiba Mais</a>
+                </li>
+                <!-- Adicione mais habilidades conforme necessário -->
+            </ul>
+        </section>
     </main>
 
     <footer>
