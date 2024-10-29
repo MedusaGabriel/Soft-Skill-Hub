@@ -14,7 +14,7 @@
             
             <div class="flex">
                 <a href="../pag/index.html"><i class="fa-brands fa-uncharted"></i></a>
-                <nav>
+                <nav class="navigation">
                     <ul>
                         <li><a href="../pag/index.html">Início</a></li>
                         <li><a href="../pag/habilidades.html">Habilidades</a></li>
@@ -24,7 +24,7 @@
                 </nav>
 
                 <div class="btn-cadastro">
-                    <a href="../pag/login.html"><button>Login</button></a>
+                    <a href="#"><button>Login</button></a>
                 </div>
                 
             </div>
@@ -74,63 +74,7 @@
             </section>
         </main>
     </div>
-<!--
-    <main>
-        <section class="intro">
-            <h2>Bem-vindo ao Soft Skills Hub</h2>
-            <p>A importância das soft skills no ambiente profissional e pessoal é inegável. Este portal foi criado para ajudar você a desenvolver habilidades essenciais, como comunicação, trabalho em equipe e resiliência.</p>
-        </section>
 
-        <section class="highlights">
-            <h3>Destaques</h3>
-            <div class="highlight-cards">
-                <div class="card">
-                    <h4>Prática de Comunicação</h4>
-                    <p>Aprenda a se expressar de forma clara e eficaz em diferentes situações.</p>
-                </div>
-                <div class="card">
-                    <h4>Trabalho em Equipe</h4>
-                    <p>Desenvolva habilidades para colaborar e trabalhar em equipe com sucesso.</p>
-                </div>
-                <div class="card">
-                    <h4>Resiliência</h4>
-                    <p>Aprenda a lidar com desafios e a se adaptar a mudanças.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimonials">
-            <h3>O que nossos usuários dizem</h3>
-            <div class="testimonial-cards">
-                <div class="testimonial">
-                    <p>"O Soft Skills Hub transformou minha maneira de me comunicar no trabalho!" - João Silva</p>
-                </div>
-                <div class="testimonial">
-                    <p>"As práticas de equipe realmente ajudaram a melhorar nossa colaboração!" - Maria Oliveira</p>
-                </div>
-                <div class="testimonial">
-                    <p>"As dicas de resiliência foram valiosas para enfrentar os desafios." - Ana Santos</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="call-to-action">
-            <h3>Pronto para começar?</h3>
-            <p>Inscreva-se agora e comece a desenvolver suas soft skills com práticas personalizadas!</p>
-            <a href="../pag/login.html" class="btn">Inscreva-se</a>
-        </section>
-
-        <section class="resources">
-            <h3>Artigos e Recursos</h3>
-            <ul>
-                <li><a href="#">A Importância das Soft Skills no Trabalho</a></li>
-                <li><a href="#">Como Melhorar Suas Habilidades de Comunicação</a></li>
-                <li><a href="#">Trabalho em Equipe: Dicas e Estratégias</a></li>
-                <li><a href="#">Resiliência: Como Desenvolver essa Habilidade</a></li>
-            </ul>
-        </section>
-    </main>
--->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -144,7 +88,72 @@
             </div>
         </div>
     </footer>
+<div class="wrapper-container">
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon>
+        </span>
 
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Senha</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Lembre-se de min</label>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+                <button type="submit" class="btn">Entrar</button>
+                <div class="login-register">
+                    <p>Não tem uma conta? 
+                        <a href="#" 
+                        class="register-link">
+                        Registre-se</a></p>
+                </div>
+            </form>
+        </div>  
+
+        <div class="form-box register">
+            <h2>Cadastro</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Usúario</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Senha</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Eu concordo com os termos</label>
+                </div>
+                <button type="submit" class="btn">Cadastra-se</button>
+                <div class="login-register">
+                    <p>Você já tem uma conta?<a 
+                        href="#" 
+                        class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div> 
+
+    </div>
+</div>
     <script src="../scripts/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
